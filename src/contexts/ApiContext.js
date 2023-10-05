@@ -9,7 +9,7 @@ export default function ApiProvider({children}){
 
     // useEffect(() => {
     //     setApiUrl("https://api.pokemontcg.io/");
-    // }, []);
+    // }, []); 
 
     return (
         <ApiContext.Provider value={
