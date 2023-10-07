@@ -13,6 +13,10 @@ root.render(
     <ApiProvider>
       
       <BrowserRouter>
+      
+      {/* Content shown on ALL routes fgoes here */}
+        <NavSearchBar />
+
         <Routes>
           {/* Homepage route  */}
           <Route path="/" element={<App />}/>
