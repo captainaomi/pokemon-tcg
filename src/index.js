@@ -7,14 +7,19 @@ import ApiProvider from './contexts/ApiContext';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CardSearchByName from './pages/CardSearchByName';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavSearchBar from './components/NavSearchBar';
+
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ApiProvider>
       
       <BrowserRouter>
-      
-      {/* Content shown on ALL routes fgoes here */}
+
+        {/* Content shown on ALL routes goes here */}
         <NavSearchBar />
 
         <Routes>
@@ -37,19 +42,3 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
